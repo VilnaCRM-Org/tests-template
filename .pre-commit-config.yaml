@@ -1,0 +1,8 @@
+repos:
+    -   repo: local
+        hooks:
+            -   id: conventional-commits
+                name: Check Conventional Commits
+                entry: python3 conventional-commits.py
+                language: python
+                types: [ ]
