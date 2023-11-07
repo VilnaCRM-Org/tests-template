@@ -1,0 +1,61 @@
+# Ignore Python cache files and directories
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore test-related files and directories
+/.pytest_cache/
+/.tox/
+/nosetests.xml
+/nosetests/
+/.coverage
+/.coverage.*
+/coverage_html/
+/.hypothesis/
+*.egg-info/
+.pytest_cache/
+
+# Ignore virtual environment directories
+venv/
+env/
+ENV/
+
+# Ignore system or editor-specific files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Ignore configuration files
+*.config
+*.ini
+*.log
+
+# Ignore build and distribution directories
+build/
+dist/
+
+# Ignore compiled Python files
+*.pyc
+
+# Ignore local development settings
+*.local
+
+# Ignore database files
+*.db
+
+# Ignore package-lock.json for Python packages
+package-lock.json
+
+# Ignore test result artifacts
+test-results/
+
+# Ignore Python environment directory
+.python-environment/
+
+# Ignore Jupyter Notebook checkpoints and outputs
+.ipynb_checkpoints/
+*.ipynb
