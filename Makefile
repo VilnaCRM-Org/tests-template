@@ -14,7 +14,7 @@ help:
 	@grep -E '^[-a-zA-Z0-9_\.\/]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[32m%-15s\033[0m %s\n", $$1, $$2}'
 
 build: ## Build docker image for python
-	$(DOCKER_BUILD_COMMAND) && curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python3 get-pip.py && python3 -m pip install pre-commit identify && git add .pre-commit-config.yaml && pre-commit
+	$(DOCKER_BUILD_COMMAND) && curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python3 get-pip.py && python3 -m pip install pre-commit identify && git add .pre-commit-config.yaml && pre-commit install
 
 start: ## Build docker image and start pytest
 	$(DOCKER_BUILD_COMMAND) && $(DOCKER_COMMAND) pytest

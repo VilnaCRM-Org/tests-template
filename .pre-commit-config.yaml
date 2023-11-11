@@ -1,8 +1,7 @@
 repos:
-    -   repo: local
-        hooks:
-            -   id: conventional-commits
-                name: Check Conventional Commits
-                entry: python3 conventional-commits.py
-                language: python
-                types: [ ]
+    - repo: https://github.com/compilerla/conventional-pre-commit
+      rev: v2.4.0
+      hooks:
+          - id: conventional-pre-commit
+            stages: [commit-msg]
+            args: [(feat|fix|docs|style|refactor|test|chore)(\(.+\))]

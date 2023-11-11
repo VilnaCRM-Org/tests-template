@@ -13,6 +13,8 @@ def validate_commit_message(commit_msg_file):
         sys.exit(1)
 
 if __name__ == "__main__":
+    print("test failes !!!!!!!!!!!!!!!!!!!!!!!!")
+    print(sys.argv)
     if len(sys.argv) != 2:
         print("Usage: conventional-commits.py <commit_msg_file>")
         sys.exit(1)
