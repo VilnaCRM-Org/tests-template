@@ -41,4 +41,7 @@ test: pytest ## Alias for pytest
 test-smoke: ## Run smoke tests
 	$(PYTEST_COMMAND) --smoke
 
+pylint: ## Run pylint to check codestyle
+	$(DOCKER_BUILD_COMMAND) && docker run tests pylint tests/*
+
 .PHONY: test test-smoke

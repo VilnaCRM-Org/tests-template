@@ -5,7 +5,7 @@ FROM python:3.9
 WORKDIR /app
 
 # Copy the test code to the container
-COPY ./tests /app
+COPY . /app
 
 # Install any test runner-specific dependencies, e.g., pytest
 RUN pip install --no-cache-dir pytest
