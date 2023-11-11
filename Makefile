@@ -44,4 +44,7 @@ test-smoke: ## Run smoke tests
 pylint: ## Run pylint to check codestyle
 	$(DOCKER_BUILD_COMMAND) && docker run tests pylint tests/*
 
+behave: ## Run pylint to check codestyle
+	$(DOCKER_BUILD_COMMAND) && docker run tests behave
+
 .PHONY: test test-smoke

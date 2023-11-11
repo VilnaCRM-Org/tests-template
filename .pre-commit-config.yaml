@@ -26,3 +26,12 @@ repos:
             types: [ python ]
             pass_filenames: false
             files: \.py$
+    - repo: local
+      hooks:
+          - id: behave
+            name: behave
+            entry: make behave
+            language: system
+            files: \.feature$|\.py$
+            pass_filenames: false
+            stages: [ commit ]
