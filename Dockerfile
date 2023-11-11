@@ -10,5 +10,5 @@ COPY . /app
 # Install any test runner-specific dependencies, e.g., pytest
 RUN pip install --no-cache-dir pytest
 
-RUN pip install requests behave allure-pytest graphene pylint pyflakes
+RUN pip install requests behave allure-pytest graphene pylint
 
