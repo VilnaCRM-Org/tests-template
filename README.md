@@ -25,7 +25,7 @@ Install the latest [docker](https://docs.docker.com/engine/install/), [docker co
 Use `make` command to set up project and automatically install all needed dependencies
 > make start
 
-That's it. You should now be ready to use PHP service template!
+That's it. You should now be ready to use QA Automation template!
 
 ## Using
 You can use `make` command to easily control and work with project locally.
@@ -46,8 +46,6 @@ test            Alias for pytest
 
 ## Documentation
 Start reading at the [GitHub wiki](https://github.com/VilnaCRM-Org/tests-template/wiki). If you're having trouble, head for [the troubleshooting guide](https://github.com/VilnaCRM-Org/tests-template/wiki/Troubleshooting) as it's frequently updated.
-
-You can generate complete API-level documentation by running `phpdoc` in the top-level folder, and documentation will appear in the `docs` folder, though you'll need to have [PHPDocumentor](http://www.phpdoc.org) installed.
 
 If the documentation doesn't cover what you need, search the [many questions on Stack Overflow](http://stackoverflow.com/questions/tagged/vilnacrm), and before you ask a question, [read the troubleshooting guide](https://github.com/VilnaCRM-Org/tests-template/wiki/Troubleshooting).
 
