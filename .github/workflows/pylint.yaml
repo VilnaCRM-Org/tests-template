@@ -21,6 +21,6 @@ jobs:
           pip install pylint
 
       - name: Run Pylint
-        uses: marketplace/actions/github-action-for-pylint
+        uses: cclauss/GitHub-Action-for-pylint@0.7.0
         with:
           pylint_args: "**/*.py"
