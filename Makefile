@@ -38,13 +38,8 @@ pytest: ## A popular and powerful testing framework for Python.
 
 test: pytest ## Alias for pytest
 
-test-smoke: ## Run smoke tests
-	$(PYTEST_COMMAND) --smoke
-
 pylint: ## Run pylint to check codestyle
 	$(DOCKER_BUILD_COMMAND) && docker run tests pylint tests/*
 
-behave: ## Run pylint to check codestyle
+behave: ## A tool to run BDD tests
 	$(DOCKER_BUILD_COMMAND) && docker run tests behave
-
-.PHONY: test test-smoke

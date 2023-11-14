@@ -2,8 +2,6 @@
 
 # QA Automation Template for API Testing
 
-[![codecov](https://codecov.io/gh/VilnaCRM-Org/tests-template/branch/main/graph/badge.svg?token=J3SGCHIFD5)](https://codecov.io/gh/VilnaCRM-Org/tests-template)
-
 This repository serves as a template for setting up a new repository for writing API auto tests. It's tailored for developers who require a quick start to API testing with Python.
 
 ## Features
@@ -22,7 +20,7 @@ This software is distributed under the [Creative Commons Zero v1.0 Universal](ht
 ### Minimal installation
 You can clone this repository locally or use Github functionality "Use this template"
 
-Install the latest [docker](https://docs.docker.com/engine/install/) and [docker compose](https://docs.docker.com/compose/install/)
+Install the latest [docker](https://docs.docker.com/engine/install/), [docker compose](https://docs.docker.com/compose/install/) and [python3](https://www.python.org/downloads/)
 
 Use `make` command to set up project and automatically install all needed dependencies
 > make start
@@ -37,14 +35,13 @@ Execute `make` or `make help` to see the full list of project commands.
 The list of the `make` possibilities:
 
 ```
-behave          Run pylint to check codestyle
+behave          A tool to run BDD tests
 build           Build docker image for python
 pylint          Run pylint to check codestyle
 pytest          A popular and powerful testing framework for Python.
 sh              Dive into docker conatiner and execute any command that you need
 start           Build docker image and start pytest
 test            Alias for pytest
-test-smoke      Run smoke tests
 ```
 
 ## Documentation
