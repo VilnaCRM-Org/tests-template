@@ -1,0 +1,37 @@
+repos:
+    - repo: https://github.com/compilerla/conventional-pre-commit
+      rev: v2.4.0
+      hooks:
+          - id: conventional-pre-commit
+            stages: [commit-msg]
+            args: [(feat|fix|docs|style|refactor|test|chore)(\(.+\))]
+    - repo: local
+      hooks:
+        - id: pylint
+          name: pylint
+          entry: make pylint
+          language: system
+          types: [ python ]
+          args:
+            [
+              "-rn", # Only display messages
+              "-sn", # Don't display the score
+            ]
+    - repo: local
+      hooks:
+          - id: pytest
+            name: pytest
+            entry: make pytest
+            language: system
+            types: [ python ]
+            pass_filenames: false
+            files: \.py$
+    - repo: local
+      hooks:
+          - id: behave
+            name: behave
+            entry: make behave
+            language: system
+            files: \.feature$|\.py$
+            pass_filenames: false
+            stages: [ commit ]
