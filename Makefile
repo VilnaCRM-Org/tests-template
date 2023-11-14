@@ -31,7 +31,7 @@ start: build ## Build docker image and start pytest
 	$(PYTEST_COMMAND)
 
 sh: ## Dive into docker conatiner and execute any command that you need
-	$(DOCKER_RUN_COMMAND) bash
+	$(DOCKER_RUN_COMMAND) /bin/sh
 
 pytest: ## A popular and powerful testing framework for Python.
 	$(DOCKER_BUILD_COMMAND) && docker run tests pytest
